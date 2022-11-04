@@ -64,7 +64,7 @@ def ss_to_text(li,file_name,emal):
 	for item in li:
 		if(text.find(item)!=-1):
 			print("found")
-			mail = Mailer(email="cybereedu634@gmail.com", password="dhrskmaimjojdkzf")
+			mail = Mailer(email="cybereedu634@gmail.com", password="mwezyvkgnvpxwprs")
 			mail.send(receiver=emal, subject='Your Cyber Bullying Blocker', message='Unwanted Contents found on the screen')
 			break
 		else:
