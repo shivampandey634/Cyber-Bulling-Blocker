@@ -7,11 +7,11 @@ import pyscreenshot
 from PIL import Image
 import pytesseract
 from mailer import Mailer
-pytesseract.pytesseract.tesseract_cmd=r'C:\Users\shiva\AppData\Local\Tesseract-OCR\tesseract.exe'# Pytesseract should be installed in order to run this program
+pytesseract.pytesseract.tesseract_cmd=r'C:\Users\shiva\AppData\Local\Tesseract-OCR\tesseract.exe'# Pytesseract should be installed in order to run this program 
+# make sure to provide the right directoy where pytesseract is installed.
 
 
 window = Tk()
-
 background=PhotoImage(file="C:\pic.png")#    We can remove these three lines as the image loads from documents the local storage 
 shiv=Label(window,image=background)
 shiv.pack()
