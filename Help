@@ -1,3 +1,1 @@
--- Basic idea of the project.
-
 This is a simple project based on the tesseract OCR module, in which we can  transform the images to texts, and then if any suspicious texts are found, the mailer will mail directly to the USER.
