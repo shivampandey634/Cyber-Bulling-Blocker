@@ -7,12 +7,12 @@ import pyscreenshot
 from PIL import Image
 import pytesseract
 from mailer import Mailer
-pytesseract.pytesseract.tesseract_cmd=r'C:\Users\shiva\AppData\Local\Tesseract-OCR\tesseract.exe'# Pytesseract should be installed in order to run this program
+pytesseract.pytesseract.tesseract_cmd=r'C:\Users\shiva\AppData\Local\Tesseract-OCR\tesseract.exe'# Pytesseract should be installed in order to run this program 
+# make sure to provide the right directoy where pytesseract is installed.
 
 
 window = Tk()
-
-background=PhotoImage(file="C:\pic.png")# We can remove these three lines as the image loads from documents the local storage 
+background=PhotoImage(file="C:\pic.png")#    We can remove these three lines as the image loads from documents the local storage 
 shiv=Label(window,image=background)
 shiv.pack()
 
@@ -55,7 +55,7 @@ def blocker(website_list):
     #    		    file.write(line)
 	#	
 	#	file.truncate()
-
+# 1 1 1 1 1 1 1 1   
 
 def ss_to_text(li,file_name,emal):
 	image = "C:/Users/shiva/Pictures/Screenshots/"+file_name
@@ -93,7 +93,6 @@ def working(li,t,email):
 		time.sleep(t)
 		ss_to_text(li,file_name,email)
 		i+=1
-
 def message():
 	if len(var1.get()) !=0 and len(var2.get())!=0:
 		showinfo("Message", "Successfully saved!") 
